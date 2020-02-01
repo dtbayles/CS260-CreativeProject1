@@ -15,26 +15,32 @@
       overflow: auto;
     }
     .wrapper {
-      background-color: grey;
       display: flex;
       justify-content: center;
       flex-direction: column;
     }
-    .left-side {
-      width: 29%;
-      background-color: whitesmoke;
-    }
     .calendar {
+      margin: 0 auto;
       margin-top: 2%;
       min-width: 800px;
       width: 100%;
     }
-    .right-side {
-      width: 29%;
-      background-color: gainsboro;
+    .calendar iframe {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .calendar h3 {
+      text-align: center;
+    }
+    .content-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
     }
     .content {
       text-align: center;
+      background-color: orange;
+      width: 50%;
     }
     div.calendar, iframe { /* FIXME:  */
       display: block;
@@ -73,13 +79,17 @@
 
     <div class="wrapper">
       <div class="calendar">
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FDenver&amp;showTitle=1&amp;mode=MONTH&amp;showTz=1&amp;showCalendars=1&amp;showTabs=1&amp;showPrint=0&amp;showDate=1&amp;showNav=1&amp;title=Family%20Calendar&amp;src=ZHJldzQ4OTBAZ21haWwuY29t&amp;color=%23CC3333" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        <p>Test<br></p>
+        <h3>Family Calendar</h3>
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FDenver&amp;src=ZHJldzQ4OTBAZ21haWwuY29t&amp;color=%23CC3333&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0" style="border-width:0" width="80%" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="content-wrapper">
+      <div class="content">
+        <h3>Upcoming Events</h3>
       </div>
       <div class="content">
-        <h1>Events</h1>
+        <h3>Recent Events</h3>
       </div>
-
+</div>
     </div>
 
 
