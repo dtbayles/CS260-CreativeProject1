@@ -12,7 +12,11 @@
 .jumbotron {
   margin-bottom: auto;
 }
-
+/*Overwrite bootstrap to make home.html boxes have correct padding*/
+.col {
+  padding-left: 0;
+  padding-right: 0;
+}
 .card-footer {
   position: relative;
   bottom: 0;
