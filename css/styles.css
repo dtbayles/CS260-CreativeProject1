@@ -6,3 +6,8 @@
 .wrapper {
   background-color: purple;
 }
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
