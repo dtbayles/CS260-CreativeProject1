@@ -8,6 +8,11 @@
   padding-right: 0;
   padding-left: 0;
 }
+/*Overwrite bootstrap to make the pictures.html page flow better*/
+.jumbotron {
+  margin-bottom: auto;
+}
+
 .card-footer {
   position: absolute;
   bottom: 0;
